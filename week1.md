@@ -52,3 +52,31 @@
   * Create a repo in the HelloWorld project via IntelliJ
   * Write code, commit, and push
   * Show diff
+
+### Day 2
+
+* Review assignment (arrays and classes)
+* Methods
+  * A class is more than just a data structure; it can contain code
+  * All code must exist inside a class
+  * Modify the `Person` class
+    * Create getters and setters
+    * Create a constructor
+  * Why getters and setters?
+    * Can be useful over direct field access if you want to enforce constraints
+    * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation)
+* Work through examples of using `String` methods in the REPL
+  * Call methods
+    * `charAt`
+    * `contains`
+    * `equals`
+    * `indexOf`
+    * `split`
+    * `startsWith`
+    * `substring`
+    * `toUpperCase`
+  * Look up the Java doc for `String`
+* Modify the `Person` class
+  * Add constraint in `setAge` so it only sets the age if it is a positive number
+  * Add constraint in `setName` so it only sets the name if there is a space in it
+  * Refector the conditional check into `isValidName`
