@@ -80,3 +80,21 @@
   * Add constraint in `setAge` so it only sets the age if it is a positive number
   * Add constraint in `setName` so it only sets the name if there is a space in it
   * Refector the conditional check into `isValidName`
+
+### Day 3
+
+* Review assignment (methods)
+* Static methods and fields
+  * They're stored in the class rather than in each object
+  * Use static methods if it is "standalone" (no need to access fields)
+  * Make `isValidName` static
+  * Static methods and fields (look at the ones in `Math` and `System`)
+* Main method
+  * Running Java code the normal way
+* Create [TextAdventure](../projects/TextAdventure)
+  * Use `Scanner` to read console input
+    * Unlike output, input requires creating an object
+    * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
+  * Control flow
+    * Conditionals
+    * Exceptions
