@@ -8,7 +8,7 @@
   * Methods
   * Control flow (if, while, for, throw)
   * ArrayLists and HashMaps
-* Create a ToDo project
+* Create a [ToDo](https://github.com/TIY-Charleston-Back-End-Feb2016/ToDo) project
 * Jar files
   * File -> Project Structure...
   * Click "Artifacts" and then the plus button
