@@ -12,7 +12,7 @@
 ### Day 1
 
 * Intro to Java
-  * Create HelloWorld IntelliJ project
+  * Create [HelloWorld](https://github.com/TIY-Charleston-Back-End-Feb2016/HelloWorld) IntelliJ project
   * Start the REPL
     * Tools -> Start JREPL
   * Scalar variables
@@ -91,7 +91,7 @@
   * Static methods and fields (look at the ones in `Math` and `System`)
 * Main method
   * Running Java code the normal way
-* Create [TextAdventure](../projects/TextAdventure)
+* Create [TextAdventure](https://github.com/TIY-Charleston-Back-End-Feb2016/TextAdventure)
   * Use `Scanner` to read console input
     * Unlike output, input requires creating an object
     * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
