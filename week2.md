@@ -25,7 +25,7 @@
   * Add them to an `ArrayList<Person>`
   * Search an `ArrayList<Person>` for someone with a particular name
 * Use `System.out.printf` in the ToDo project
-* Create a [Zoo project](../projects/Zoo)
+* Create a [Zoo project](https://github.com/TIY-Charleston-Back-End-Feb2016/Zoo)
   * Animal
     * Mammal
       * Dog
