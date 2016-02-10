@@ -45,3 +45,23 @@
   * Create an `Enemy` class
   * Create a `Character` class that they extend
   * Create a `battle` method in `Character`
+
+### Day 3
+
+* Review assignment (object-oriented programming - inventory)
+* File I/O
+  * Writing a `File` with `FileWriter`
+  * Reading a `File` with `Scanner`
+    * Read line by line with a `while (scanner.hasNext())` loop and `scanner.nextLine()`
+    * Read entire file with `scanner.useDelimiter("\\Z")` and `scanner.next()`
+  * Reading and writing JSON
+* Text adventure
+  * Add save feature
+* Dependency management
+  * Maven
+  * Pull in the [JSON library](http://jodd.org/doc/json/)
+  * Add to project
+    * File -> Project Structure...
+    * Click "Libraries" and then the plus button
+    * Click "From Maven..."
+    * Search for "jodd json"
