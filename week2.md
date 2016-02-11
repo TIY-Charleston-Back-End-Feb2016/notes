@@ -100,7 +100,7 @@
   * Create a test
     * Select a class you want to write tests for
     * Navigate -> Test 
-* Create a [Forum project](../projects/Forum)
+* Create a [Forum project](https://github.com/TIY-Charleston-Back-End-Feb2016/Forum)
   * Create console-based forum with custom file format
   * Create `Post` and `ArrayList<Post>`
   * Create file and read its contents into the arraylist
