@@ -65,3 +65,45 @@
     * Click "Libraries" and then the plus button
     * Click "From Maven..."
     * Search for "jodd json"
+
+### Day 4
+
+* Review assignment (file I/O - save JSON)
+* Exercise
+  * As a group, create a `HashMap<String, ArrayList<String>>`
+* Text adventure
+  * Set breakpoint in `main` to see contents of objects
+  * Create bug and set breakpoint
+  * Hotswap values
+  * Write test for `battle` method
+* Debugging with IntelliJ
+  * Primitive form of debugging: printing variables
+  * Better form of debugging: IntelliJ's debugger
+    * Set breakpoint
+    * See what variables contain at that moment in time
+    * Reload changed classes
+      * Can't reload method if it's in the middle of execution
+      * Can't reload method if its signature has changed
+      * [Notch using this feature](https://www.youtube.com/watch?v=BES9EKK4Aw4)
+* Testing with IntelliJ
+  * Create test folder
+    * File -> Project Structure...
+    * Click "Modules"
+    * Right-click the "src" folder and click "New Folder"
+    * Call it "test"
+    * Right-click the "test" folder and click "Tests" to mark it as a test folder
+  * Add JUnit 4 to project
+    * File -> Project Structure...
+    * Click "Libraries" and then the plus button
+    * Click "From Maven..."
+    * Type in "junit:junit:4.12"
+  * Create a test
+    * Select a class you want to write tests for
+    * Navigate -> Test 
+* Create a [Forum project](../projects/Forum)
+  * Create console-based forum with custom file format
+  * Create `Post` and `ArrayList<Post>`
+  * Create file and read its contents into the arraylist
+  * Loop over posts and print the top ones out
+  * Break the loop out into `printPosts`
+  * Create an infinite loop that listens for a post # to jump to
