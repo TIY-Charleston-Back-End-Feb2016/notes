@@ -84,3 +84,33 @@
     * `<uses-permission android:name="android.permission.INTERNET" />`
   * Create an anonymous class based on `WebViewClient`
     * Override the `onPageStarted` method to update the address bar
+
+### Day 4
+
+* Review assignment (android - contacts)
+* Create a project
+  * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
+  * Uncheck everything except "Desktop"
+  * Open the project in IntelliJ
+  * Run -> Edit Configurations...
+* Create [HelloGame](https://github.com/TIY-Charleston-Back-End-Feb2016/HelloGame)
+  * Create `x` and `y`
+  * Continuously increment `x`
+  * Create `move` method
+    * Create `if` statements that use `Gdx.input.isKeyPressed` to change the position
+    * Set `xv` and `yv` to `MAX_VELOCITY` in the `if` statements
+    * Change `x` and `y` by the `xv` and `yv` multiplied by `Gdx.graphics.getDeltaTime()`
+    * Dampen `xv` and `yv`
+* Create [SuperKoalio](https://github.com/TIY-Charleston-Back-End-Feb2016/SuperKoalio)
+  * Create `x`, `y`, `xv`, and `yv`
+  * Load the koala `Texture` and split it by width (18) and height (26)
+  * Set `stand` texture to `grid[0][0]`
+  * Copy the `move` method from HelloGame
+  * Add gravity and jump velocity
+  * Set `jump` texture to `grid[0][1]`
+  * Use a `FitViewport` so the screen scales as the window is resized
+  * Add `walk` animation
+* Build as a JAR file
+  * Click the "Gradle" tab on the right side of the IntelliJ window
+  * :desktop -> Tasks -> other -> dist
+  * The JAR file will be in `desktop/build/libs`
