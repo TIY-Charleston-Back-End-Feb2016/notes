@@ -32,3 +32,35 @@
   * Add create account form to `index.html`
   * Create a POST route that saves the username into an object
   * Display the name on the account page
+
+### Day 2
+
+* Review assignment (spark - microblog)
+* Review mustache
+  * `String name;`
+    * Welcome, {{name}}!
+  * `ArrayList<String> names;`
+    * {{#names}} {{.}} {{/names}}
+  * `Message msg;`
+    * {{#message}} {{text}} by {{username}} {{/message}}
+  * `ArrayList<Message> messages;`
+    * {{#messages}} {{text}} by {{username}} {{/messages}}
+  * Conditional (truthy)
+    * {{#name}}Welcome, {{name}}!{{/name}}
+  * Conditional (falsey)
+    * {{^name}}Please login.{{/name}}
+* Add multi-user support to HelloSpark
+  * Store users in `HashMap<String, User>`
+* Cookies
+  * The `Session` works by storing a cookie with a session ID
+  * Cookies are small pieces of data sent from a web server
+  * Browsers send them back each time they talk to the server afterwards
+* Create [GameTracker](https://github.com/TIY-Charleston-Back-End-Feb2016/GameTracker)
+  * Add the Spark and Mustache libraries
+  * Create `resources/templates`
+  * Create `resources/templates/home.html`
+  * Create `/` route
+  * Create `resources/templates/login.html`
+  * Create `/login` route
+  * Create `Game` and the `/create-game` route
+  * Add games to the `home.html` template
