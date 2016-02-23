@@ -3,7 +3,7 @@
 ### Day 1
 
 * Review assignment (libgdx - minicraft)
-* Exercise (parse a sentence and calculate word frequency)
+* Exercise (parse string, remove duplicate words, build new string)
 * Review language features
   * Anonymous classes
     * We made one in the BrowserAndroid project
@@ -19,7 +19,7 @@
       * Run code in an anonymous function
 * HTTP
   * GET vs POST requests
-* Create [HelloSpark](../projects/HelloSpark)
+* Create [HelloSpark](https://github.com/TIY-Charleston-Back-End-Feb2016/HelloSpark)
   * Create a new project and use the command line template
   * Project Structure -> Libraries -> Add [Spark](http://sparkjava.com/)
     * `com.sparkjava:spark-core:2.3`
