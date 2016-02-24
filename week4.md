@@ -64,3 +64,26 @@
   * Create `/login` route
   * Create `Game` and the `/create-game` route
   * Add games to the `home.html` template
+
+### Day 3
+
+* Review assignment (spark - microblog continued)
+* Exercise (with arraylist of names, take the first 5, map uppercase, filter those starting with "A")
+* Streams
+  * map
+  * filter
+* Create [ForumWeb](https://github.com/TIY-Charleston-Back-End-Feb2016/ForumWeb)
+  * Set up the libraries and `resources` directory
+  * Create `Message` (id, replyId, username and text) with a constructor
+  * Create `User` (name and password)
+  * Create `HashMap<String, User>` and `ArrayList<Message>`
+  * Write `addTestUsers` and `addTestMessages` method and make the aforementioned variables static
+  * Create `home.html` which lists messages
+  * Create `/` route
+    * Get username from session
+    * Create `HashMap` and add username/threads to it
+  * Turn the thread text into links that show replies to the given message
+    * GET routes can receive parameters too, but they are passed via the URL rather than via an HTML form
+    * In the `/` route, get the replyId from `request.queryParams`
+  * Use the mustache if-else to determine whether to show the login form
+    * Create `/login` and `/logout` route
