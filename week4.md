@@ -87,3 +87,43 @@
     * In the `/` route, get the replyId from `request.queryParams`
   * Use the mustache if-else to determine whether to show the login form
     * Create `/login` and `/logout` route
+
+### Day 4
+
+* Review assignment (spark - paging)
+* Exercise (reverse array, turn array into hashmap)
+* Layers of the Internet
+  * Physical layer (hardware)
+    * Wireless
+    * Electrical (ethernet, coaxial)
+    * Fiber optics
+  * Internet layer (packets)
+    * IPv4
+    * IPv6
+  * Transport layer (reliability)
+    * UDP (checksum)
+    * TCP (checksum and retransmission)
+  * Application layer (end users)
+    * ASCII
+    * UTF-8
+    * HTTP
+    * HTTP/2
+* ForumWeb
+  * Create create-message form in `home.html`
+    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
+  * Create `/create-message` route
+    * Get username from session
+    * If username is null, run `Spark.halt(403)`
+    * Get replyId and text from `request.queryParams`
+    * Create `Message` and add it to the `ArrayList<Message>`
+    * Redirect to `/`
+  * You can make it refresh the current page rather than take you home
+    * `response.redirect(request.headers("Referer"))`
+* Build as a JAR file
+  * File -> Project Structure...
+  * Click "Artifacts" and then the plus button
+  * JAR -> From modules with dependencies...
+  * Choose the main class and click OK
+  * Build -> Build Artifacts...
+* Upload JAR file to the "Releases" section on Github
+* CRUD (create, read, update, delete)
