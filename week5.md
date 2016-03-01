@@ -54,3 +54,48 @@
     * `SELECT * FROM players`
     * `DELETE FROM players WHERE name='Alice'`
     * `SELECT * FROM players`
+
+### Day 2
+
+* Review assignment (sql basics - game tracker database)
+* Exercise (read people.csv via `Scanner` into arraylist and run case-insensitive search)
+* Add database to [ToDo](https://github.com/TIY-Charleston-Back-End-Feb2016/ToDo)
+  * Add the H2 JAR
+  * Create `Connection` and `Statement`
+  * `CREATE TABLE IF NOT EXISTS todos (id IDENTITY, text VARCHAR, is_done BOOLEAN)`
+  * Create `insertTodo` with `PreparedStatement`
+    * `INSERT INTO todos VALUES (NULL, ?, false)`
+  * Call `insertTodo` when `optionNum == 1`
+  * Create `selectTodos` that returns `ArrayList<ToDoItem>`
+    * `SELECT * FROM todos`
+  * Remove the original `ArrayList<ToDoItem> todos` declaration
+  * Call `selectTodos` at the top of the while loop
+  * Create `toggleTodo`
+    * `UPDATE todos SET is_done = NOT is_done WHERE id = ?`
+  * Call `toggleTodo` when `optionNum == 2`
+* Joins
+  * Most common type is `INNER JOIN`
+  * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
+  * [Visual Representation of SQL Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+* Test-Driven Development (TDD)
+* Add database to [ForumWeb](https://github.com/TIY-Charleston-Back-End-Feb2016/ForumWeb)
+  * Create `Connection`
+  * Create `createTables` tables which defines the `users` and `messages` tables
+  * Add `id` to `User` class
+  * Create `static void insertUser(Connection conn, String username, String password)`
+  * Create `static User selectUser(Connection conn, String username)`
+  * Create a test for `insertUser` and `selectUser` called `testUser`
+    * Add junit from Maven
+    * Create `src/test` and mark it as a test dir
+    * Create `startConnection` and `endConnection`
+  * Create `static void insertMessage(Connection conn, int replyId, int userId, String text)`
+  * Create `static Message selectMessage(Connection conn, int id)`
+  * Create a test for `insertMessage` and `selectMessage` called `testMessage`
+  * Create `static ArrayList<Message> selectReplies(Connection conn, int replyId)`
+  * Create a test for `selectReplies` called `testReplies`
+  * Delete the global `users` and `messages` collections and the test methods
+  * Use new methods
+    * Use `insertUser` and `selectUser` in `/login`
+    * Use `insertMessage` in `/create-message`
+    * Use `selectMessage` in `/replies`
+    * Use `selectReplies` in `/` and `/replies`
