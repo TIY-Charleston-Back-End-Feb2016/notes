@@ -99,3 +99,28 @@
     * Use `insertMessage` in `/create-message`
     * Use `selectMessage` in `/replies`
     * Use `selectReplies` in `/` and `/replies`
+
+### Day 3
+
+* Exercise (manually sort an array of strings)
+* HTML vs JSON routes
+  * Initiate request from HTML (link or form) -> server returns HTML -> browser refreshes page
+  * Initiate request from JavaScript -> server returns JSON -> JavaScript parses data and injects it into the page
+* Create [AjaxChat](https://github.com/TIY-Charleston-Back-End-Feb2016/AjaxChat)
+  * Create project and add libraries
+    * `com.h2database:h2:1.4.190`
+    * `com.sparkjava:spark-core:2.3`
+    * `org.jodd:jodd-json:3.6.6`
+    * `junit:junit:4.12`
+  * Open database
+    * Create `Connection`
+    * Create a table
+    * Define `insertMessage` and `selectMessages`
+  * Serve files in the current directory
+    * `Spark.externalStaticFileLocation("public");`
+    * `Spark.init();`
+  * Create routes for AJAX queries
+    * POST `/add-message`
+    * GET `/get-messages`
+  * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
+  * Create `index.html`, `chat.js` and bring in jquery
