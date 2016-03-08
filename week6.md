@@ -36,3 +36,63 @@
   * Click the Gradle tab on the right edge of the window
   * HelloSpring -> Tasks -> build -> build
   * It will be in `build/libs`
+
+### Day 2
+
+* Exercise (reverse number)
+* Java build systems
+  * Ant (2000)
+    * First major Java build tool
+    * Uses `build.xml`
+  * Maven (2004)
+    * Introduced downloadable dependencies
+    * Uses `pom.xml`
+  * Gradle (2012)
+    * Customizable, uses a real programming language
+    * Can use Maven libraries
+    * Uses `build.gradle`
+  * IDE-specific projects (IntelliJ and Eclipse)
+* PostgreSQL
+  * Download and run [Postgres.app](http://postgresapp.com/)
+  * Open `psql`
+  * `\l`
+  * `\du`
+  * `CREATE DATABASE hellodb;`
+  * `\c hellodb`
+  * `CREATE TABLE test (id SERIAL, stuff VARCHAR);`
+  * `\dt`
+  * `INSERT INTO test VALUES (DEFAULT, 'hello world');`
+  * `SELECT * FROM test;`
+  * `DROP TABLE test;`
+* HelloDatabase
+  * Download and add library: [PostgreSQL Driver](https://jdbc.postgresql.org/download/postgresql-9.4-1205.jdbc42.jar)
+  * Change connection URL to `"jdbc:postgresql://localhost:5432/hellodb"`
+  * Use `SERIAL` instead of `IDENTITY`
+  * Use `DEFAULT` instead of `NULL`
+  * Use `DECIMAL` instead of `DOUBLE`
+* Writing direct SQL queries
+  * Problems
+    * Dialects differ between databases
+    * Easy to make typos
+    * Going between the database and Java objects is busy work
+  * Solutions
+    * SQL wrapper libraries: JOOQ
+    * Object-Relational Mapping libraries: Hibernate
+* Create GameTrackerSpring
+  * Create project from template with the following options
+    * Web
+    * DevTools
+    * JPA
+    * Mustache
+    * PostgreSQL
+  * Create `gametracker` database in psql
+  * In `src/main/resources/application.properties` add:
+    * `spring.datasource.url=jdbc:postgresql://localhost:5432/gametracker`
+    * `spring.jpa.generate-ddl=true`
+  * Create `Game` class that uses `@Entity`, `@Id`, and `@GeneratedValue`
+  * Create `src/main/resources/templates/home.html`
+  * Create `GameTrackerController` with a `/` and `/add-game` route
+  * Create `GameRepository` interface that extends `CrudRepository`
+  * Use `@Autowired` to bring the repo into the controller
+  * In `/add-game`, create a `Game` object and save it to the repo
+  * In `/`, add the games to the `Model`
