@@ -96,3 +96,35 @@
   * Use `@Autowired` to bring the repo into the controller
   * In `/add-game`, create a `Game` object and save it to the repo
   * In `/`, add the games to the `Model`
+
+### Day 3
+
+* GameTrackerSpring
+  * Add genre filter
+    * In `home.html`, add links for each game genre
+    * Add `findByGenre` to `GameRepository`
+    * Modify the `/` route to use it if the `genre` parameter isn't null
+  * Add genre and release year filter
+    * Add `findByGenreAndReleaseYear` to `GameRepository`
+    * Modify the `/` route to use it if the `genre` and `releaseYear` parameters aren't null
+    * Add `findByGenreAndReleaseYearIsGreaterThanEqual` to `GameRepository`
+  * More query methods
+    * `findFirstByGenre`
+    * `countByGenre`
+    * `findByGenreOrderByNameAsc`
+    * [Documentation](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
+  * Add search form
+    * In `home.html`, add search form
+    * Add `searchByName` to `GameRepository` with `@Query`
+  * Add a user class and do joins
+    * Create `User` with `@Table(name = "users")`
+    * Create `src/main/resources/templates/login.html`
+    * Create `/login` route and return the template in the `/` route
+    * Create `/logout` route and add link in `home.html`
+    * Create `UserRepository` interface with `findOneByName`
+    * Add `UserRepository` to the controller and use it in the `/login` route
+    * Add `User` to `Game` with `@ManyToOne`
+    * Edit `home.html` to show the username next to each item
+    * Add `List<Game>` to `User` with `@OneToMany(mappedBy = "user")`
+    * Add a `showMine` parameter to the `/login` route and a link to `home.html`
+    * Insert a default user at startup by creating an init method with `@PostConstruct`
