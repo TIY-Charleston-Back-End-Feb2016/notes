@@ -128,3 +128,23 @@
     * Add `List<Game>` to `User` with `@OneToMany(mappedBy = "user")`
     * Add a `showMine` parameter to the `/login` route and a link to `home.html`
     * Insert a default user at startup by creating an init method with `@PostConstruct`
+
+### Day 4
+
+* Exercise (palindrome detector)
+* Major security topics
+  * SQL injection prevention
+  * Cross-site scripting prevention
+  * SSL encryption
+  * Secure password storage
+* GameTrackerSpring
+  * Use subpackages for better organization
+    * Controllers go in `controllers`
+    * Entities go in `entities`
+    * Repositories go in `services`
+    * Make fields public when necessary
+  * Add a secure login system
+    * Add password field to `login.html` and the `User` class
+    * Make the `/login` route take a password and make both params required
+    * Download [`PasswordHash.java`](https://github.com/defuse/password-hashing/blob/master/PasswordStorage.java) and use it to store and validate the password
+    * Drop and create database
