@@ -9,7 +9,7 @@
     * Sane API
     * Immutable
     * Supports ISO-8601
-  * Create [CalendarSpring](https://github.com/TIY-Charleston-Back-End-Feb2016/CalendarSpring}
+  * Create [CalendarSpring](https://github.com/TIY-Charleston-Back-End-Feb2016/CalendarSpring)
 * Add paging support to the "Purchases" assignment
   * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
   * Make the `/` route take an `int page` that defaults to `"0"`
