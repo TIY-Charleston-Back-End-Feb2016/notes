@@ -60,3 +60,34 @@
     * Create `/photos` route
     * Add `$.get("/photos", getPhotos)` to `main.js`
     * Add a `setInterval` to `main.js` that gets the photos every 3 seconds
+
+### Day 3
+
+* Fork [AngularSpring](https://github.com/TIY-Charleston-Back-End-Feb2016/AngularSpring)
+  * JS frameworks behave differently than standard HTML queries
+    * They encode parameters with JSON rather than URL encoding
+    * They sometimes use path variables to request a specific id
+    * All routes pertaining to a given entity have the same name
+  * Add the necessary routes to make the app work
+* Create [AnonUpload](https://github.com/TIY-Charleston-Back-End-Feb2016/AnonUpload)
+  * Create project structure
+    * Create project from template with the following options
+      * Web
+      * DevTools
+      * JPA
+      * H2
+      * PostgreSQL
+  * Create client-side code
+    * Create `public`
+    * Create `public/index.html` and `public/main.js`
+    * Copy jquery into `public`
+  * Create server-side code
+    * Modify `application.properties`
+      * `spring.datasource.url=jdbc:h2:./main`
+      * `spring.jpa.generate-ddl=true`
+      * `spring.jpa.hibernate.ddl-auto=none`
+    * Create `AnonFile`
+    * Create `AnonFileRepository`
+    * Create `AnonUploadController` with `@RestController`
+    * Create a `/files` route
+    * Create an `/upload` route
