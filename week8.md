@@ -61,3 +61,20 @@
     * `(def say-hello (fn [name] (println (format "Hello, %s!" name))))`
     * `(defn say-hello [name] (println (format "Hello, %s!" name)))`
     * `(defn say-hello [& names] (doseq [name names] (println (format "Hello, %s!" name))))`
+
+### Day 2
+
+* Create [to-do-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/to-do-clojure)
+  * Open `core.clj`
+  * Create `atom`
+  * Create `let` that adds the result of `read-line` to the atom
+  * Use a `loop` to continuously read until `q` is pressed
+  * Print out the to-do list
+* Create [people-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/people-clojure)
+  * Read the file and split it into lines
+  * Split each line by commas
+  * Pull out the header row
+  * Map over the people to interleave the header into them
+  * Turn all the people into hash-maps
+  * Keywordize the keys
+  * Filter out only people from a certain country
