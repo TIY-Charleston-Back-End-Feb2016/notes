@@ -78,3 +78,27 @@
   * Turn all the people into hash-maps
   * Keywordize the keys
   * Filter out only people from a certain country
+
+### Day 3
+
+* Open people-clojure
+  * Display people in HTML
+    * Dependencies
+      * `[ring "1.4.0"]`
+      * `[hiccup "1.0.5"]`
+      * `[compojure "1.5.0"]`
+    * Move CSV code into separate function
+      * Comment out the `spit` call
+      * Make it return `people` instead
+    * Require `compojure.core`
+    * Create a `/` route
+      * `(c/defroutes app (c/GET "/" [] "Hello, world!"))`
+    * Require `ring.adapter.jetty`
+    * In the main function, run:
+      * `(jetty/run-jetty app {:port 3000})`
+    * Require `hiccup.core`
+    * Use `hiccup/html` to generate html
+    * Require `ring.middleware.params`
+    * Pass the app through the `wrap-params` function so params are parsed
+    * Pass a GET parameter to determine which country to filter by
+    * Add a header with links to each country
