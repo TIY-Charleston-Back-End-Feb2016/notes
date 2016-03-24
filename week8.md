@@ -102,3 +102,9 @@
     * Pass the app through the `wrap-params` function so params are parsed
     * Pass a GET parameter to determine which country to filter by
     * Add a header with links to each country
+
+## Day 4
+
+* Create [tic-tac-toe-clojure](../projects/tic-tac-toe-clojure)
+  * Solves a [4clojure problem](https://www.4clojure.com/problem/73)
+* Create [microblog-clojure](../projects/microblog-clojure)
