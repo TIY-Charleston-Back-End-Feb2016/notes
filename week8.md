@@ -105,6 +105,6 @@
 
 ## Day 4
 
-* Create [tic-tac-toe-clojure](../projects/tic-tac-toe-clojure)
+* Create [tic-tac-toe-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/tic-tac-toe-clojure)
   * Solves a [4clojure problem](https://www.4clojure.com/problem/73)
-* Create [microblog-clojure](../projects/microblog-clojure)
+* Create [microblog-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/microblog-clojure)
