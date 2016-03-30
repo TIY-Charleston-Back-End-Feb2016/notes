@@ -14,7 +14,7 @@
     * `(def all-evens (filter even? all-nums)) ; (0 2 4 6 …)`
     * `(take 5 all-evens) ; (0 2 4 6 8)`
     * `(take-while #(< % 10) all-nums) ; (0 1 2 3 4 5 6 7 8 9)`
-* Create [cards-clojure](../projects/cards-clojure)
+* Create [cards-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/cards-clojure)
   * Create Run and REPL configurations
   * Make a `def` for suits and ranks
   * `create-deck` returns a deck of cards
@@ -22,7 +22,7 @@
   * `create-hands` returns all possible combinations
   * `flush?` returns true if the hand is a flush
   * Write a test for the `flush?` function
-* Create [Cards](../projects/Cards)
+* Create [Cards](https://github.com/TIY-Charleston-Back-End-Feb2016/Cards)
   * Create `Card` class
   * Define `Suit` and `Rank` enums
   * `createDeck` returns a deck of cards
@@ -38,7 +38,7 @@
   * Running a function inside itself
   * Use instead of normal `for` loop if you want to control when the loop continues and update its values
   * `(loop [num 0] (if (< num 10) (recur (inc num)) num))`
-* Create [maze-clojure](../projects/maze-clojure)
+* Create [maze-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/maze-clojure)
   * Define `size`
   * `create-rooms` returns a vector of vectors containing maps for each room
   * `-main` calls `create-rooms` in a `let` and prints out the maze
@@ -55,7 +55,7 @@
     * Add `:visited? true` to the room and assoc it into the rooms
     * Get `random-neighbor`
     * If it isn't nil, run `tear-down-wall` and create a `loop` that calls `create-maze` until it stops returning new rooms
-* Create [Maze](../projects/Maze)
+* Create [Maze](https://github.com/TIY-Charleston-Back-End-Feb2016/Maze)
   * Create `Room` class with `row, col, wasVisited, hasBottom, hasRight`
   * Define `size`
   * `createRooms` returns an `ArrayList` of `ArrayList` containing objects for each room
@@ -78,7 +78,7 @@
   * Clojure `pmap` and `pvalues`
   * Java `parallelStream`
   * Caveat: Amdahl's law
-* Create [ants-clojure](../projects/ants-clojure)
+* Create [ants-clojure](https://github.com/TIY-Charleston-Back-End-Feb2016/ants-clojure)
   * `(def ant-count 100)`
   * `(def ants (atom nil))`
   * `create-ants` returns a list of maps with random `:x` and `:y` fields
@@ -99,7 +99,7 @@
     * Divide into `1000` to get frames per second
   * Display the frames per second: `(.setText fps-label (str (fps now)))`
   * Add `(Thread/sleep 1)` to `move-ant` and use `pmap` to improve performance
-* Create [Ants](../projects/Ants)
+* Create [Ants](https://github.com/TIY-Charleston-Back-End-Feb2016/Ants)
   * `static final int ANT_COUNT = 100;`
   * Define `Ant` class with `double x` and `double y`
   * Define `ArrayList<Ant> ants` and the `createAnts` method
