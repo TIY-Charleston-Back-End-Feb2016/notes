@@ -1,4 +1,4 @@
-## Week 1 - Intro
+## Week 8 - Intro
 
 ### Day 1
 
